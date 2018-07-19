@@ -1,0 +1,11 @@
+{
+  "name": "hello-graphql",
+  "version": "1.0.0",
+  "description": "Intro to GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Martin",
+  "license": "ISC"
+}
