@@ -18,7 +18,9 @@ let typeDefs = `
 
   type Query {
     user(id: ID!): User
+    users: [User]
     blog(id: ID!): Blog
+    blogs: [Blog]
   }
 `;
 
@@ -31,7 +33,9 @@ let resolvers = {
   },
   Query: {
     user: (_, { id }) => users.find(user => user.id === id),
-    blog: (_, { id }) => blogs.find(blog => blog.id === id)
+    users: () => users,
+    blog: (_, { id }) => blogs.find(blog => blog.id === id),
+    blogs: () => blogs
   }
 }
 
